@@ -1,0 +1,71 @@
+/* In Dashboard/assets/style.css */
+
+/* --- Light Theme Variables (Default) --- */
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --primary-text: #212529;
+    --secondary-text: #6c757d;
+    --border-color: #dee2e6;
+    --header-color: #0d6efd; /* Blue for light theme */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Dark Theme Variables --- */
+/* These variables are applied when the body has the .dark-theme-active class */
+.dark-theme-active {
+    --primary-bg: #0B1021;
+    --secondary-bg: #1A2035;
+    --card-bg: #161B2E;
+    --primary-text: #E0E0E0;
+    --secondary-text: #A0A0A0;
+    --border-color: #3A3F57;
+    --header-color: #AEC6FF; /* Light blue for dark theme */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- General Styles --- */
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow) !important;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.card-title {
+    color: var(--header-color) !important;
+}
+
+.table {
+    --bs-table-color: var(--primary-text);
+    --bs-table-bg: var(--card-bg);
+    --bs-table-border-color: var(--border-color);
+    --bs-table-striped-bg: var(--secondary-bg);
+    --bs-table-hover-bg: var(--secondary-bg);
+}
+
+.clickable-row:hover {
+    background-color: var(--secondary-bg) !important;
+    cursor: pointer;
+}
+
+/* Ensure Plotly chart text color updates */
+.js-plotly-plot .plotly .legendtext,
+.js-plotly-plot .plotly .xtick,
+.js-plotly-plot .plotly .ytick {
+    fill: var(--secondary-text) !important;
+}```
+
+After making these changes to `index.py`, `macro.py`, and `style.css`, restart your dashboard. The alignment issues and repeated components will be gone, and you will have a single, clean "Dark Mode" switch that correctly themes the entire application.

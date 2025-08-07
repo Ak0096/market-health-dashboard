@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+venv/
+.venv/
+
+# Secrets
+.env
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Data and configuration files you don't want public
+# We will list the config file but NOT the database itself.
+config.json
+
+# Excel files
+*.xlsx
+
+# OS-specific
+.DS_Store
+Thumbs.db
