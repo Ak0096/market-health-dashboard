@@ -2,7 +2,32 @@
 
 An end-to-end data pipeline and web dashboard for analyzing US stock market health. The system automates data ingestion (yfinance, FRED) and computes technical/macro indicators. Features a Plotly Dash UI and a Gemini-powered AI analyst for data-driven summaries.
 
-This project is designed to be a robust, scalable, and efficient tool for any serious market participant.
+## Dashboard Preview
+
+The dashboard provides a comprehensive, multi-faceted view of the market. The Macro tab focuses on high-level health indicators, while the Meso tab allows for deep dives into sector, industry, and individual stock performance.
+
+<table>
+  <tr>
+    <td align="center"><em>Macro View - Health Gauges & AI Summary</em></td>
+    <td align="center"><em>Macro View - Historical & Macro Charts</em></td>
+    <td align="center"><em>Meso View - Industry Performance Ranking</em></td>
+  </tr>
+  <tr>
+    <td><img src="assets/1.png" width="100%"></td>
+    <td><img src="assets/2.png" width="100%"></td>
+    <td><img src="assets/3.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Meso View - Group RS & Momentum Analysis</em></td>
+    <td align="center"><em>Meso View - Relative Strength Leaders Table</em></td>
+    <td align="center"><em>Dark Mode Theme</em></td>
+  </tr>
+  <tr>
+    <td><img src="assets/4.png" width="100%"></td>
+    <td><img src="assets/5.png" width="100%"></td>
+    <td><img src="assets/6.png" width="100%"></td>
+  </tr>
+</table>
 
 ## Key Features
 
@@ -18,12 +43,6 @@ This project is designed to be a robust, scalable, and efficient tool for any se
 - **Interactive Dashboard:** A multi-tab web interface built with Plotly Dash for visualizing all indicators, from high-level gauges to detailed sector rankings.
 - **Scalable Architecture:** The backend data pipelines and the frontend dashboard are designed to be memory-efficient and handle a growing database without performance degradation.
 
-## Dashboard Preview
-
-*(Optional: Add a screenshot of your dashboard here. It makes the project look much more professional.)*
-
-![Dashboard Screenshot](path/to/your/screenshot.png)
-
 ## Technology Stack
 
 - **Backend:** Python, Pandas, NumPy, SQLAlchemy
@@ -38,8 +57,8 @@ Follow these steps to get the project running locally.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-    cd YOUR_REPOSITORY_NAME
+    git clone https://github.com/Ak0096/market-health-dashboard.git
+    cd market-health-dashboard
     ```
 
 2.  **Create a Virtual Environment & Install Dependencies:**
