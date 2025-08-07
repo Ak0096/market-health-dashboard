@@ -1,0 +1,44 @@
+{
+  "trading_view": {
+    "exchanges": [
+      "NASDAQ",
+      "NYSE"
+    ],
+    "max_stocks_per_exchange": 15000,
+    "min_market_cap": 500000000,
+    "min_avg_volume": 100000
+  },
+  "yfinance": {
+    "years_of_data": 5,
+    "benchmark_ticker": "^GSPC"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "db_password",
+    "dbname": "us_market.db"
+  },
+  "pipeline_settings": {
+    "max_workers": 3
+  },
+  
+  "fred_api": {
+    "api_key": "",
+    "series": {
+      "DFF": "Effective Federal Funds Rate",
+      "DGS10": "10-Year Treasury Constant Maturity Rate",
+      "T10Y2Y": "10-Year Minus 2-Year Treasury Spread",
+      "VIXCLS": "CBOE Volatility Index"
+    }
+  },
+
+  "dashboard_output": {
+    "js_file_path": "dashboard/market_analysis_data.js"
+  },
+  "output_settings": {
+    "reports_directory": "reports",
+    "create_dated_folders": true,
+    "filename_prefix": "us_market_rs_analysis"
+  }
+}
